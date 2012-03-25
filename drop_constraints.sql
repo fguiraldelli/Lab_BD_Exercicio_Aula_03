@@ -1,0 +1,38 @@
+ALTER TABLE Empregado
+DROP CONSTRAINT fk_SuperSSN;
+
+ALTER TABLE empregado
+DROP CONSTRAINT fk_dno;
+
+
+ALTER TABLE Departamento
+DROP CONSTRAINT fk_GerSSN;
+
+ALTER TABLE DeptoLocalizacoes
+DROP CONSTRAINT fk_Dnumero;
+
+ALTER TABLE Projeto
+DROP CONSTRAINT fk_Dnum;
+
+ALTER TABLE Trabalha_Em
+DROP CONSTRAINT fk_ESSN;
+
+ALTER TABLE Trabalha_Em
+DROP CONSTRAINT fk_pnopnum;
+
+ALTER TABLE Dependente
+DROP CONSTRAINT fk_ESSND;
+
+
+DROP TABLE Empregado;
+
+DROP TABLE Departamento;
+
+DROP TABLE Dependente;
+
+DROP TABLE DeptoLocalizacoes;
+
+DROP TABLE Projeto;
+
+DROP TABLE Trabalha_Em;
+
