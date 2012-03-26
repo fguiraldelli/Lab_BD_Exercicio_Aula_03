@@ -66,9 +66,6 @@ SELECT
 FROM empregado AS e, trabalha_em AS t
 WHERE e.ssn = t.essn AND t.pno = 1
 
-SELECT * FROM trabalha_em
-WHERE pno = 1
-
 --11:Recupere todos os empregados do departamento 5 que ganham entre 30 mil e 40 mil dolares
 SELECT pnome AS 'nome',
 		salario AS 'Salário'
@@ -104,7 +101,6 @@ SELECT DISTINCT
 		e.ssn AS 'SSN',
 		pnome AS 'Nome',
 		d.dnumero AS 'Departamento'
-		--p.pjnome AS 'Projeto'
 FROM empregado AS e, departamento AS d, trabalha_em AS t, projeto AS p
 WHERE e.dno = 5 AND p.dnum = 5 AND e.dno = d.dnumero AND e.ssn = t.essn
 
